@@ -1,44 +1,134 @@
-body{
-    font-family: 'rubik', sans-serif;
-    font-weight: 100;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    
 }
-body > * {
-    font-family: 'rubik', sans-serif;
-    font-weight: 100;
+
+/*NavBar*/
+nav li{
+    display: inline;
+    float: left;
+    margin: 10px;
+    float: right;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+    
 }  
-a{
-    text-decoration: none !important;
-    color: black !important;
-} 
-a:hover{
-    text-decoration: underline;;
-} 
-.nav-link{
-    color: black;
+li a {
+    display: block;
+    color: #44bae8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    border-bottom: 2px solid #44bae8;   
+}
+/*head*/
+
+.pre h1,p{
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+ span{
+    font-size: 30px;
+    color: #44bae8;
+    margin-bottom: 20px;
+}
+.pre h1{
+    font-size: 20px;
+    color: #101010;
+}
+.pre a{
+    background-color: #ffffff;
+    padding: 10px 300px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #101010;
     display: inline-block;
-    position: relative;
+    margin: 35px;
+    
 }
-.nav-link:hover{
-    color: black;
+img{
+    width: 30%;
+    float: right;
+    margin: 10px;
 }
-.nav-link:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: 
-    #818080;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+
+  .about{
+    padding: 5%;
+  }
+  .about h2{
+    font-size: 30px;
+  }
+.bout {
+    display: flex;
 }
-.nav-link:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.bout i,h4,p{
+    margin: 5%;
 }
-#logo{
+.bout i,h4{
+    text-align: center;
+    align-items: center;
+}
+.about p{
+    text-align: center;
+    padding-left:10% ;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 1%;
+}
+.skills{
+    padding: 5%;
+}
+.skills h2{
+    font-size: 30px;
+}
+.skill{
+    display: flex;
+
+}
+.skill i{
+    padding-top: 70px;
+}
+.skill h5,i{
+    
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.formation{
+    padding: 5%;
+}
+.formation h2{
+    font-size: 30px;
+}
+.experience{
+    padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #logo{
     width: 60px;
 }
 #social-icon-links{
@@ -50,34 +140,8 @@ a:hover{
 #intro{
     text-align: left;
 }
-/* FORM INPUTS STYLING */
-textarea,input{
-    background: transparent;
-    color: white;
-    border: none;
-    border-bottom: 1px solid white;
-    width: 100%;
-    padding: 0.3em;
-    margin: 0.4em 0;
-}
-form{
-    padding: 2em;
-}
-button{
-    border-radius: 0;
-}
-#hero-section{
-    height: 100vh;
-}
-main{
-    height: 100vh;
-}
- span {
-    color: rgb(41, 159, 159);
- }
- h2{
-    color: rgb(0, 47, 58);
- }
+
+
 
  iframe{
     width: 50%;
