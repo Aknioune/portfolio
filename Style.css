@@ -1,7 +1,9 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: medium;
-    
+    background-color: #101010;
+    color: #fbfdff;
+    letter-spacing : 1px;
 }
 
 /*NavBar*/
@@ -30,6 +32,10 @@ li a {
 li a:hover {
     border-bottom: 2px solid #44bae8;   
 }
+nav img{
+    width: 5%;
+    margin-left: 50px;
+}
 /*head*/
 
 .pre h1,p{
@@ -43,29 +49,44 @@ li a:hover {
     margin-bottom: 20px;
 }
 .pre h1{
+    padding-top: 30px;
     font-size: 20px;
-    color: #101010;
+   
 }
 .pre a{
-    background-color: #ffffff;
+    background-color: #44bae8;
     padding: 10px 300px;
     text-decoration: none;
     font-weight: bold;
     color: #101010;
     display: inline-block;
     margin: 35px;
-    
+    border-radius: 5px;   
 }
-img{
+.pre a:hover{
+    
+    background-color: #101010;
+    color: #44bae8;
+    transition:  1s;
+}
+.header img{
+    padding-top: 60px;
     width: 30%;
     float: right;
-    margin: 10px;
+    margin: 10px;  
 }
 
+
+
+
+
+
   .about{
+    
     padding: 5%;
   }
   .about h2{
+    padding-top: 90px;
     font-size: 30px;
   }
 .bout {
@@ -77,7 +98,9 @@ img{
 .bout i,h4{
     text-align: center;
     align-items: center;
+    color: #44bae8;
 }
+
 .about p{
     text-align: center;
     padding-left:10% ;
@@ -103,6 +126,8 @@ img{
     margin-left: 70px;
     margin-right: 70px;
 }
+
+
 .formation{
     padding: 5%;
 }
@@ -112,6 +137,41 @@ img{
 .experience{
     padding: 5%;
 }
+.experience h2{
+    font-size: 30px;
+}
+.work{
+    padding: 5%;
+}
+.work h2{
+    font-size: 30px;
+}
+.work iframe,figure{
+    display: inline;
+    align-items: center;
+}
+
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: inherit;
+    background-color: #44bae8;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 4px;
+    font-family: Arial, Tahoma;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .up.show {
+    right: 10px;
+  }
+  .up i{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
 
 
@@ -126,9 +186,7 @@ img{
 
 
 
-
-
-  #logo{
+#logo{
     width: 60px;
 }
 #social-icon-links{
@@ -160,7 +218,7 @@ footer{
     color: #fff;
 }
 
-.footer-content{
+.footer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,13 +226,13 @@ footer{
     text-align: center;
 }
 
-.footer-content h3{
+.footer h3{
     font-size: 2.1rem;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
 }
-.footer-content p{
+.footer p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
